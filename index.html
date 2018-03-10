@@ -1,0 +1,32 @@
+<html>
+<head><title>没有U的SHUIMIAN成为SHIMIAN</title></head>
+<body>
+<h1 ><font size=30px>The Love</font></h1>
+<script>
+function changeimagine()
+{
+   element=document.getElementById("imagine")
+   if(element.src.match("love"))
+   {
+    element.src="./picture/beauty1.jpg";
+    }
+    else if(element.src.match("beauty1"))
+    {
+    element.src="./picture/beauty2.jpg"
+    }
+    else if(element.src.match("beauty2"))
+    {
+    element.src="./picture/beauty3.jpg"
+    }
+    else
+   {
+    element.src="./picture/love.jpg"
+    }
+}
+</script>
+<img id="imagine" onclick="changeimagine()" src="./picture/love.jpg" width=1080 pxheight=1081px >
+
+
+</body>
+
+</html>
