@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head><title>没有U的SHUIMIAN成为SHIMIAN</title></head>
 <body>
 <h1 ><font size=30px>Maybe this is the Love</font></h1>
@@ -18,8 +18,12 @@ function changeimagine()
     {
     element.src="./picture/beauty3.jpg"
     }
-    else
+    else if(element.src.match("beauty3"))
    {
+    element.src="./picture/love1.jpg"
+    }
+    else
+    {
     element.src="./picture/love.jpg"
     }
 }
